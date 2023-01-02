@@ -29,7 +29,9 @@
 // will be used for the starting arg for every run of the function
 // function runs one tim for every ele in arr
 function reverse(str) {
-str.split("").reduce(() => {}, "");
+return str.split("").reduce((reversed, character) => {
+    return character + reversed;
+}, "");
     };
 
 
