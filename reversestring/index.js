@@ -15,14 +15,22 @@
 //        .join('');
 // };
 
-// used for loop
+// used for of loop
+// function reverse(str) {
+// let reversed = "";
+// for (let character of str ) {
+//     reversed = character + reversed;
+// };
+// return reversed;
+// };
+
+// when ever reduce run its take the starting arg which is an empty str 
+// its passes the empty str into the arrow function and whatever gets returned from the inner function will be 
+// will be used for the starting arg for every run of the function
+// function runs one tim for every ele in arr
 function reverse(str) {
-let reversed = "";
-for (let character of str ) {
-    reversed = character + reversed;
-};
-return reversed;
-};
+str.split("").reduce(() => {}, "");
+    };
 
 
 
