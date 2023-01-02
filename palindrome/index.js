@@ -7,13 +7,20 @@
 //   palindrome("abba") === true
 //   palindrome("abcdefg") === false
 
-function palindrome(str) {
-  const reversed = str.split("").reverse().join("");
-  debugger;
-  return str === reversed;
-}
+// function palindrome(str) {
+//   const reversed = str.split("").reverse().join("");
+//   debugger;
+//   return str === reversed;
+// }
 
-palindrome("abba");
-palindrome("abcdefg");
+// palindrome("abba");
+// palindrome("abcdefg");
+
+
+//.every returns a boolean
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every
+function palindrome(str) {
+   
+  };
 
 module.exports = palindrome;
