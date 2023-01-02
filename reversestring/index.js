@@ -6,7 +6,6 @@
 //   reverse('hello') === 'olleh'
 //   reverse('Greetings!') === '!sgniteerG'
 
-
 // used 3 str methods .split on each char .reverse and .join on characters
 // function reverse(str) {
 //     return str
@@ -24,17 +23,12 @@
 // return reversed;
 // };
 
-// when ever reduce run its take the starting arg which is an empty str 
-// its passes the empty str into the arrow function and whatever gets returned from the inner function will be 
+// when ever reduce run its take the starting arg which is an empty str
+// its passes the empty str into the arrow function and whatever gets returned from the inner function will be
 // will be used for the starting arg for every run of the function
 // function runs one tim for every ele in arr
 function reverse(str) {
-return str.split("").reduce((reversed, character) => {
-    return character + reversed;
-}, "");
-    };
-
-
-
+  return str.split("").reduce((rev, char) => char + rev, "");
+}
 
 module.exports = reverse;
