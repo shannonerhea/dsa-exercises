@@ -28,7 +28,9 @@
 // will be used for the starting arg for every run of the function
 // function runs one tim for every ele in arr
 function reverse(str) {
+    debugger;
   return str.split("").reduce((rev, char) => char + rev, "");
-}
+};
+reverse("asdf");
 
 module.exports = reverse;
