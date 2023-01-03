@@ -20,6 +20,7 @@
 //.every returns a boolean
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every
 function palindrome(str) {
+    // turn str into arr with .split
    return str.split("").every((char, i ) => {
     return char === str[str.length -1 -i];
    });
