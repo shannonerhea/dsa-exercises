@@ -9,16 +9,17 @@
 //   reverseInt(-90) === -9
 //console.log("node index.js runs my code!");
 // .toString()
-const myNum = 200
+//const myNum = 200
 //let res = myNum.toString().split(''); // make int a an arr of str ["2", "0", "0"]
-let res = parseInt(myNum.toString());
+//let res = parseInt(myNum.toString());
 //parseInt turns the str back into a integer
-console.log(res);
-
-
+//console.log(res);
 
 // Math.sign(); https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sign
 // eg. Math.sign(500)= 1 Math.sign(-500)= -1
-function reverseInt(n) {}
+function reverseInt(n) {
+  const reversed =  n.toString().split("").reverse().join("");
+  return parseInt(reversed) * Math.sign(n);
+};
 
 module.exports = reverseInt;
