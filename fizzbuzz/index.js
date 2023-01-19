@@ -4,7 +4,7 @@
 // “fizz” instead of the number and for the multiples
 // of five print “buzz”. For numbers which are multiples
 // of both three and five print “fizzbuzz”.
-// --- Example
+// -- Example
 //   fizzBuzz(5);
 //   1
 //   2
